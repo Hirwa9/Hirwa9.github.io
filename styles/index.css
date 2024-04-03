@@ -1,0 +1,24 @@
+@import "../all.css?v=1.0001";
+/* Index */
+
+.project-elem .abs-images {
+    min-height: 315px;
+    animation: zoomInBack 1s 1;
+}
+.project-elem .abs-images > img:nth-child(2) {
+    width: fit-content;
+    max-width: 35%;
+    top: 5%;
+    right: 5%;
+    animation: flyInBottom 2s 1;
+    transition: var(--trans);
+    z-index: 1;
+}
+.project-elem .abs-images > img:nth-child(2):hover {
+    box-shadow: 0 0 .5rem .25rem var(--black3);
+}
+/* @media screen and (min-width: 992px) {
+    .project-elem .d-lg-flex {
+        flex-direction: row-reverse;
+    }
+} */

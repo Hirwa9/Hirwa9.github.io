@@ -1,0 +1,21 @@
+@import "../all.css?v=1.0001";
+/* Index */
+.services-showcase > article:last-child {
+    margin-bottom: 4rem;
+}
+.service-article {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: start; */
+    padding-top: .4rem;
+    padding-bottom: .4rem;
+}
+.service-article > p:last-child {
+    margin-top: auto;
+}
+.service-article ul > li {
+    padding-block: .4rem;
+}
+.service-article h2 ~ hr {
+    animation: flyInBottomSM 1s 1;
+}

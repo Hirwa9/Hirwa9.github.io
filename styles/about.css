@@ -1,0 +1,52 @@
+@import "../all.css?v=1.0001";
+/* Index */
+.biography-elem {
+    border-bottom: 1rem solid var(--black3);
+}
+.teck-skills-levels {
+    height: 60vh;
+    justify-content: space-between;
+    background-image: linear-gradient(transparent, var(--black3));
+}
+.teck-skills-levels > div.level-space {
+    width: calc(100% / var(--dataCount));
+    margin-inline: .125rem;
+    padding: .5rem .25rem;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    border-radius: 0 0 1rem 1rem;
+    color: var(--bs-light);
+    animation: heightFrom0 3s 1;
+    overflow: hidden;
+}
+.teck-skills-levels > .level-space {
+    height: var(--_level);
+}
+.teck-skills-levels > .jQuery-level {
+    background-color: #0769ad;
+}
+.teck-skills-levels > .javaScript-level {
+    background-color: #d6ba32;
+}
+.teck-skills-levels > .css-level {
+    background-color: #264de3;
+}
+.teck-skills-levels > .html-level {
+    background-color: #e34c26;
+}
+.teck-skills-levels > .sass-level {
+    background-color: #ce649c;
+}
+.teck-skills-levels > .figma-level {
+    background-color: #f24c1c;
+}
+.teck-skills-levels > .php-level {
+    background-color: #777bb3;
+}
+.teck-skills-levels > div.level-space > div.level-data {
+    text-align: center;
+}
+.teck-skills-levels > div.level-space > div.level-data > div:last-child {
+    font-weight: bold;
+}
