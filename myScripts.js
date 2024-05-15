@@ -1083,6 +1083,19 @@ function sort_list_descending(aList) {
         aList.appendChild(item);
     });
 }
+/**
+ * Show toast (alert)
+ */
+
+const show_toast = (message) => {
+    const toast = document.createElement('div');
+    toast.classList.add('myToast');
+    toast.textContent = message;
+    document.body.appendChild(toast);
+    setTimeout(() => {
+        toast.remove();
+    }, 3000);
+};
 
 /**
  * Save/Print an element
@@ -2321,16 +2334,16 @@ setInterval(animate_needle_watch, 1000);
  */
 
 // Jump to random month
-liturgyMonth.forEach(el => {
-    let monthName = el.querySelectorAll('.dropdown-item');
-    monthName.forEach((month, inx) => {
-        month.addEventListener('click', function () {
-            create_custom_month(inx);
-            select_month_date(1);
-            display_liturgical_info([month_num_to_nm((month_str + 1)), 1]);
-        });
-    });
-});
+// liturgyMonth.forEach(el => {
+//     let monthName = el.querySelectorAll('.dropdown-item');
+//     monthName.forEach((month, inx) => {
+//         month.addEventListener('click', function () {
+//             create_custom_month(inx);
+//             select_month_date(1);
+//             display_liturgical_info([month_num_to_nm((month_str + 1)), 1]);
+//         });
+//     });
+// });
 
 // Select certain date
 function select_month_date(date) {
@@ -2355,7 +2368,7 @@ $('.month-next').click(function () {
 });
 
 // Select today by default
-display_liturgical_info([month_num_to_nm((month_str + 1)), current_date]);
+// display_liturgical_info([month_num_to_nm((month_str + 1)), current_date]);
 
 // Update the copyright year
 $('.copyright-year').html(dateStr.getFullYear());
