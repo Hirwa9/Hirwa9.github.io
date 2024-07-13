@@ -3597,6 +3597,11 @@ html::-webkit-scrollbar-thumb:hover,
 .clip-path-dodecagon {
     clip-path: polygon(50% 0%, 73% 9%, 91% 27%, 99% 50%, 91% 73%, 73% 91%, 50% 99%, 27% 91%, 9% 73%, 1% 50%, 9% 27%, 27% 9%);
 }
+
+.mask-bottom {
+	mask-image: linear-gradient(black, black, var(--black3) 90%, transparent);
+}
+
 .bordered {
 	border-width: 1px !important;
 	border-style: solid !important;
