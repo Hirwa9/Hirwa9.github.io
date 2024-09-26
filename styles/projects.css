@@ -32,16 +32,21 @@
 } */
 
 .site-technologies {
-    /* border: 1px solid var(--secondaryClr); */
     border-radius: 0 0 10px 10px;
-    color: var(--black2);
+    color: var(--secondaryClr);
+    font-weight: bold;
+    box-shadow: 0 .5rem 1rem var(--black4);
+    transition: var(--trans);
+}
+
+.site-technologies:hover {
+    background-color: var(--secondaryClr3);
 }
 
 .site-technologies li {
     border-radius: 100vw;
-    padding: .35rem 1rem;
-    font-size: small;
+    padding: .35rem 1.5rem;
+    font-size: smaller;
     text-wrap: nowrap;
-    background-color: var(--secondaryClr);
-    color: var(--bs-light);
+    background-color: var(--secondaryClr3);
 }
