@@ -17,6 +17,6 @@
     padding: .35rem 1.5rem;
     font-size: smaller;
     text-wrap: nowrap;
-    border: 2px solid var(--black4);
-    background-color: transparent;
+    border: 1px solid var(--white1);
+    background-color: var(--secondaryClr4);
 }
